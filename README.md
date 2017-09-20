@@ -1,5 +1,5 @@
 # ZkSample
-zk integration with Spring 
+zk Web Application   
 
 Integration with ZK CORE,Spring CORE,Spring Security and Hibernate lib
 
