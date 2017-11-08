@@ -9,6 +9,7 @@
 		<spring.version>3.1.2.RELEASE</spring.version>
 		<hibernate.version>4.0.0.Final</hibernate.version>
 		<commons-io>2.4</commons-io>
+		<dockerfile-extension.version>1.3.5</dockerfile-extension.version>
 		<maven.build.timestamp.format>yyyy-MM-dd</maven.build.timestamp.format>
 		<packname>-${project.version}-FL-${maven.build.timestamp}</packname>
 	</properties>
@@ -101,6 +102,14 @@
 			<artifactId>hsqldb</artifactId>
 			<version>2.2.6</version>
 		</dependency>
+		
+		<!-- Docker plugin -->
+		<!-- https://mvnrepository.com/artifact/com.spotify/dockerfile-maven-extension -->
+		<dependency>
+		    <groupId>com.spotify</groupId>
+		    <artifactId>dockerfile-maven-extension</artifactId>
+		    <version>${dockerfile-extension.version}</version>
+		</dependency>		
 	</dependencies>
 	<build>
 		<finalName>${project.artifactId}</finalName>
@@ -154,6 +163,20 @@
 						</configuration>
 					</execution>
 				</executions>
+			</plugin>
+			<!-- Build Docker -->
+			<plugin>
+			 <groupId>com.spotify</groupId>
+			  <artifactId>dockerfile-maven-plugin</artifactId>
+			  <version>${dockerfile-extension.version}</version>
+			  <executions>
+			    <execution>
+			      <id>default</id>
+			      <goals>
+			        <goal>build</goal>
+			      </goals>
+			    </execution>
+			  </executions>
 			</plugin>
 		</plugins>
 	</build>
