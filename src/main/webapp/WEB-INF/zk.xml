@@ -2,12 +2,12 @@
 
 <zk>
 	<!-- [Optional]
-	Uncomment if you want to defines the application's name 
+	Uncomment if you want to defines the application's name -->
 	
 	<preference>
 		<name>org.zkoss.zk.ui.WebApp.name</name>
 		<value>ZkSample</value>
 	</preference>
-	-->
+	
 	
 </zk>
