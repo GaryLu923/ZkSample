@@ -6,9 +6,8 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<properties>
 		<zk.version>8.0.2.2-Eval</zk.version>
-		<spring.version>3.2.17.RELEASE</spring.version>
-		<!-- <spring.version>3.1.2.RELEASE</spring.version> -->
-		<springsecurity.version>3.2.3.RELEASE</springsecurity.version>
+		<spring.version>4.2.5.RELEASE</spring.version>
+		<springsecurity.version>4.2.3.RELEASE</springsecurity.version>
 		<hibernate.version>4.0.0.Final</hibernate.version>
 		<commons-io>2.4</commons-io>
 		<dockerfile-extension.version>1.3.5</dockerfile-extension.version>
