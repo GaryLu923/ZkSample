@@ -2,6 +2,7 @@ package org.gary.ZkSample.services.impl;
 
 import java.util.List;
 
+import org.gary.ZkSample.dao.LogDao;
 import org.gary.ZkSample.entity.Log;
 import org.gary.ZkSample.services.MyService;
 import org.springframework.beans.factory.annotation.Autowired;
