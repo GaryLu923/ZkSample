@@ -1,4 +1,4 @@
-package org.gary.ZkSample.services.impl;
+package org.gary.ZkSample.dao;
 
 import org.gary.ZkSample.entity.Log;
 import java.util.List;

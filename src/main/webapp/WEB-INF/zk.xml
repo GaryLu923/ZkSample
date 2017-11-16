@@ -8,6 +8,13 @@
 		<name>org.zkoss.zk.ui.WebApp.name</name>
 		<value>ZkSample</value>
 	</preference>
-	
+	<!-- <library-property>
+	    <name>org.zkoss.theme.preferred</name>
+	    <value>cyborg</value> 
+	</library-property> -->
+	<library-property>
+        <name>org.zkoss.zul.image.preload</name>
+        <value>true</value>
+    </library-property>
 	
 </zk>
