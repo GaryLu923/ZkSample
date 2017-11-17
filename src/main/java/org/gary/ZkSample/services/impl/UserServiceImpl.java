@@ -1,5 +1,6 @@
 package org.gary.ZkSample.services.impl;
 
+import java.io.Serializable;
 import java.util.List;
 
 import org.gary.ZkSample.dao.UserDao;
@@ -13,34 +14,29 @@ import org.springframework.stereotype.Service;
 
 @Service("userServiceImpl")
 @Scope(
-		value = "singleton", proxyMode = ScopedProxyMode.INTERFACES)
-public class UserServiceImpl implements UserService {
+		value = "singleton", proxyMode = ScopedProxyMode.TARGET_CLASS)
+public class UserServiceImpl implements UserService, Serializable {
 
 	@Autowired private UserDao userDao;
 
-	@Override
 	public User addUser(User user) {
 		return userDao.save(user);
 	}
 
-	@Override
 	public void deleteUser(User user) throws NoSuchUserException {
 		userDao.delete(user);
 
 	}
 
-	@Override
 	public List<User> getAllUser() {
 		return userDao.getAllUser();
 	}
 
-	@Override
 	public List<User> getUserByName(String name) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
 	public User updateUser(User user) throws NoSuchUserException {
 		return userDao.update(user);
 	}

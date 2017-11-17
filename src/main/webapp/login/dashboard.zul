@@ -1,6 +1,9 @@
 <?page title="login" contentType="text/html;charset=UTF-8"?>
 <zk>
 	<window border="normal" width="500px"  title="login" apply="org.gary.ZkSample.controller.DashBoardController">
+	    <script>
+	    	$("#submitButton")
+	    </script>
 	    <grid hflex="1"> <!-- hflex="1" - available width inside parent (window) -->
 	        <columns visible="false">
 	            <column/><!-- define 2 columns to enable auxhead/er -->
@@ -40,7 +43,7 @@
 	            <row spans="2" align="right">
 	                <hlayout>
 	                    <button id="resetButton" label="Reset" />
-	                    <button id="submitButton" label="Submit" disabled="true"/>
+	                    <button id="submitButton" label="Submit" disabled="false"/>
 	                </hlayout>
 	            </row>
 	        </rows>

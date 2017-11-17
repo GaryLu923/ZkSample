@@ -16,7 +16,6 @@ import org.zkoss.zul.ListModelList;
 @VariableResolver(org.zkoss.zkplus.spring.DelegatingVariableResolver.class)
 public class MyViewModel {
 
-	// @Autowired
 	@WireVariable private MyService myService;
 	private ListModelList<Log> logListModel;
 	private String message;
