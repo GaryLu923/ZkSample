@@ -10,7 +10,7 @@
 			<property name="hibernate.connection.password" value="" />
 			<property name="hibernate.show_sql" value="true" />
 			<!-- data store in data/db under project folder -->
-			<property name="hibernate.connection.url" value="jdbc:hsqldb:file:C:/data/db" />
+			<property name="hibernate.connection.url" value="jdbc:hsqldb:file:C:/data/sample" />
 			<!-- db is not persistent to disk -->
 			<!-- <property name="hibernate.connection.url" value="jdbc:hsqldb:mem:data/store" /> --> 
 			<property name="hibernate.hbm2ddl.auto" value="update" />

@@ -3,6 +3,7 @@ package org.gary.ZkSample.controller;
 import java.util.Date;
 
 import org.gary.ZkSample.entity.User;
+import org.gary.ZkSample.services.MyService;
 import org.gary.ZkSample.services.UserService;
 import org.zkoss.zk.ui.Component;
 import org.zkoss.zk.ui.select.SelectorComposer;
@@ -33,7 +34,9 @@ public class DashBoardController extends SelectorComposer<Component> {
 
 	@Wire private Datebox birthdayBox;
 
-	@WireVariable("userService") UserService userService;
+	@WireVariable UserService userService;
+
+	@WireVariable MyService myService;
 
 	@Listen("onClick=#submitButton")
 	public void saveUser() {

@@ -1,6 +1,5 @@
 package org.gary.ZkSample.services.impl;
 
-import java.io.Serializable;
 import java.util.List;
 
 import org.gary.ZkSample.dao.UserDao;
@@ -12,10 +11,10 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.stereotype.Service;
 
-@Service("userServiceImpl")
+@Service("userService")
 @Scope(
 		value = "singleton", proxyMode = ScopedProxyMode.TARGET_CLASS)
-public class UserServiceImpl implements UserService, Serializable {
+public class UserServiceImpl implements UserService {
 
 	@Autowired private UserDao userDao;
 

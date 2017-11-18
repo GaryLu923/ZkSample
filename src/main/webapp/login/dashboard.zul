@@ -4,6 +4,17 @@
 	    <script>
 	    	$("#submitButton")
 	    </script>
+	   	<!-- <borderlayout height="200px" width="200px">
+	    	<west>
+	    		<div >W</div>
+	    	</west>
+	    	<center>
+		        <div >C</div>
+		    </center>
+		    <east>
+		    	<div>E</div>
+		    </east>
+	    </borderlayout> -->
 	    <grid hflex="1"> <!-- hflex="1" - available width inside parent (window) -->
 	        <columns visible="false">
 	            <column/><!-- define 2 columns to enable auxhead/er -->
@@ -48,17 +59,7 @@
 	            </row>
 	        </rows>
 	    </grid>
-	    <!-- <borderlayout height="200px" width="200px">
-	    	<west>
-	    		<div >W</div>
-	    	</west>
-	    	<center>
-		        <div >C</div>
-		    </center>
-		    <east>
-		    	<div>E</div>
-		    </east>
-	    </borderlayout> -->
+
 	    
 	</window>
 </zk>
